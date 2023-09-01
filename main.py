@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 import sys
-from scapy.all import sr1, IP, ICMP, ARP, Ether, srp
+from scapy.all import sr1, IP, ICMP, ARP, Ether, srp, ls
 import argparse
 from time import sleep 
 from get_args import get_args
@@ -30,7 +30,21 @@ def provisiona():
 
 if __name__ == "__main__":
     print("Provionamento")
-    options = get_args()
-    scanned_output = scan(options.target)
-    print(scanned_output)
 
+    request = ARP()
+    request.pdst = '10.17.11.1/24'
+    broadcast = Ether()
+
+    broadcast.dst = 'ff:ff:ff:ff:ff:ff'
+    request_broadcast = broadcast / request
+    clients = srp(
+        request_broadcast,
+        timeout=1
+        )[0]
+
+    for element in clients:
+        print(element[1].psrc + "      " + element[1].hwsrc)
+    
+    # options = get_args()
+    # scanned_output = scan(options.target)
+    # print(scanned_output)

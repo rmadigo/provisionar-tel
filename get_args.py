@@ -13,6 +13,5 @@ def get_args():
     if not options.target:
         # Code to handle if interface is not specified
         parser.error("[-] Please specify an IP Address or Addresses, use --help for more info.")
-    
-    print(options)
+
     return options
