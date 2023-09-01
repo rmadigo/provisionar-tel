@@ -18,5 +18,5 @@ with sync_playwright() as p:
     page.locator('//*[@id="SecurityTrustedCert"]').click()
     page.locator('//*[@id="security-trustedcert"]/form/div[1]/div[2]/div[2]/div/div/span').click()
     print(page.title())
-    # sleep(100)
+    sleep(100)
     # browser.close()
