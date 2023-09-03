@@ -64,7 +64,7 @@ def scan(localizados):
         else:
             print("MAC novo localizado!!!")
             if(mac_vendor(mac)):
-                provisionar(ip)
+                provisionar(ip, mac)
         localizados.append(mac)
 
     return localizados
