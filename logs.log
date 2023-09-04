@@ -1,0 +1,47 @@
+2023-09-04 10:22:32,769 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-04 10:22:59,429 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-04 10:25:56,599 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-04 10:29:22,386 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-04 10:29:58,463 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-04 10:30:13,703 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-04 10:32:45,922 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-04 10:33:36,657 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-04 10:35:44,654 | INFO | O telefone 24:9a:d8:61:5c:99 foi provisionado
+2023-09-04 10:36:03,331 | INFO | O telefone 24:9a:d8:61:5b:82 foi provisionado
+2023-09-04 10:36:03,331 | INFO | O telefone 24:9a:d8:61:5b:82 foi provisionado
+2023-09-04 10:36:18,573 | INFO | O telefone 24:9a:d8:61:5b:58 foi provisionado
+2023-09-04 10:36:18,573 | INFO | O telefone 24:9a:d8:61:5b:58 foi provisionado
+2023-09-04 10:36:18,573 | INFO | O telefone 24:9a:d8:61:5b:58 foi provisionado
+2023-09-04 10:38:21,525 | INFO | O telefone 24:9a:d8:61:5c:99 foi provisionado
+2023-09-04 10:38:43,032 | INFO | O telefone 24:9a:d8:61:5b:82 foi provisionado
+2023-09-04 10:38:43,032 | INFO | O telefone 24:9a:d8:61:5b:82 foi provisionado
+2023-09-04 10:39:01,017 | INFO | O telefone 24:9a:d8:61:5b:58 foi provisionado
+2023-09-04 10:39:01,017 | INFO | O telefone 24:9a:d8:61:5b:58 foi provisionado
+2023-09-04 10:39:01,017 | INFO | O telefone 24:9a:d8:61:5b:58 foi provisionado
+2023-09-04 10:41:22,087 | INFO | O telefone 24:9a:d8:61:61:9c foi provisionado
+2023-09-04 11:31:15,010 | INFO | O telefone 24:9a:d8:61:5c:99 foi provisionado
+2023-09-04 11:31:36,799 | INFO | O telefone 24:9a:d8:61:5b:82 foi provisionado
+2023-09-04 11:31:36,799 | INFO | O telefone 24:9a:d8:61:5b:82 foi provisionado
+2023-09-04 16:13:01,344 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 16:15:31,933 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 16:19:20,832 | ERROR | Task was destroyed but it is pending!
+task: <Task pending name='Task-14' coro=<Locator.click() done, defined at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_locator.py:147> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[SyncBase._sync.<locals>.<lambda>() at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_sync_base.py:105, ProtocolCallback.__init__.<locals>.cb() at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_connection.py:190]>
+2023-09-04 16:55:27,215 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 16:55:47,630 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 16:55:47,631 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 16:56:12,335 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 16:56:12,336 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed

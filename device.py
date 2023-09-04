@@ -3,11 +3,13 @@ Import na utilizados na classe Device
 device.py
 """
 from dataclasses import dataclass
-from typing import List, Dict
-from scapy.all import ARP, Ether, srp, ls
-import requests
+
 from time import sleep
-from provisiona import provisionar
+import requests
+from tqdm import tqdm
+from scapy.all import ARP, Ether, srp, Dot1Q, ls, sendp
+from provisiona import provisionar_yealink
+
 
 @dataclass
 class Device():
@@ -16,59 +18,59 @@ class Device():
     mac: str
     vendor: str
 
+
 def mac_vendor(mac):
-    """Funcao retorna fabricante do MAC"""
-    sleep(3)
-    vendor = requests.get(
-        'http://api.macvendors.com/'+mac, timeout=10).text
-    if "yealink" in vendor.lower():
-        print("FAZER Provicionamento")
-        print(f"MAC fabricante: {vendor}")
-        return True
-    else:
-        print(f"MAC fabricante: {vendor}")
-        return False
+    """Função para consultar o fabricante com base no endereço MAC"""
+    try:
+        response = requests.get('http://api.macvendors.com/' + mac, timeout=10)
+        if response.status_code == 200:
+            return response.text
+    except Exception as error:
+        print(f"Erro ao consultar fabricante: {str(error)}")
+    return "Desconhecido"
 
 
 def scan(localizados):
     """Funcao scanner rede sem paremetros"""
-
     request = ARP()
-    request.pdst = '10.17.11.1/24'
-    # request.psrc = '10.17.11.2'
+    request.pdst = '10.17.2.1/24'
+    # request.psrc = '10.17.12.2'
     # print(request.summary())
     broadcast = Ether()
     broadcast.dst = 'ff:ff:ff:ff:ff:ff'
-    request_broadcast = broadcast / request
-
+    vlan = Dot1Q(vlan=11)
+    vlan.vlan = 12
+    request_broadcast = broadcast / request / vlan
     # print(ls(request_broadcast))
+    print(sendp(request_broadcast))
     clientes = srp(
         request_broadcast,
         timeout=1,
-        verbose=False
+        # verbose=True
         )[0]
 
-    for cliente in clientes:        
-        # cliente_dict = {
-        #     "mac": cliente[1].hwsrc,
-        #     "ip": cliente[1].psrc,
-        #     "vendor": requests.get(
-        #         'http://api.macvendors.com/'+cliente[1].hwsrc, timeout=10).text
-        # }
-        mac = cliente[1].hwsrc
-        ip = cliente[1].psrc
+    print(clientes)
+    # for i in tqdm(range(10)):
+    for cliente in clientes:
+            mac = cliente[1].hwsrc
+            ip = cliente[1].psrc
+            print(f"Dispositivo encontrado - IP: {ip}, MAC: {mac}")
 
-        if mac in localizados:
-            print("MAC ja verificado!!!")
-            continue
-        else:
-            print("MAC novo localizado!!!")
-            if(mac_vendor(mac)):
-                provisionar(ip, mac)
-        localizados.append(mac)
+            if mac in localizados:
+                print("MAC já verificado!!!")
+            else:
+                print("MAC Novo localizado!!!")
+                vendor = mac_vendor(mac)
+                print(f"Fabricante: {vendor}")
+                if "yealink" in vendor.lower():
+                    provisionar_yealink(ip, mac)
+                elif "grandstream" in vendor.lower():
+                    pass
+                localizados.append(mac)
 
     return localizados
 
 
 if __name__ == "__main__":
-    mac_vendor("24:9A:D8:61:61:09")
+    scan([])
+    # mac_vendor("24:9A:D8:61:61:09")
