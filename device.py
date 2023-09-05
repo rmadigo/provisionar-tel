@@ -3,7 +3,6 @@ Import na utilizados na classe Device
 device.py
 """
 from dataclasses import dataclass
-
 from time import sleep
 import requests
 from tqdm import tqdm
@@ -52,21 +51,21 @@ def scan(localizados):
     print(clientes)
     # for i in tqdm(range(10)):
     for cliente in clientes:
-            mac = cliente[1].hwsrc
-            ip = cliente[1].psrc
-            print(f"Dispositivo encontrado - IP: {ip}, MAC: {mac}")
+        mac_cliente = cliente[1].hwsrc
+        ip_cliente = cliente[1].psrc
+        print(f"Dispositivo encontrado - IP: {ip_cliente}, MAC: {mac_cliente}")
 
-            if mac in localizados:
-                print("MAC já verificado!!!")
-            else:
-                print("MAC Novo localizado!!!")
-                vendor = mac_vendor(mac)
-                print(f"Fabricante: {vendor}")
-                if "yealink" in vendor.lower():
-                    provisionar_yealink(ip, mac)
-                elif "grandstream" in vendor.lower():
-                    pass
-                localizados.append(mac)
+        if mac_cliente in localizados:
+            print("MAC já verificado!!!")
+        else:
+            print("MAC Novo localizado!!!")
+            vendor = mac_vendor(mac_cliente)
+            print(f"Fabricante: {vendor}")
+            if "yealink" in vendor.lower():
+                provisionar_yealink(ip_cliente, mac_cliente)
+            elif "grandstream" in vendor.lower():
+                pass
+            localizados.append(mac_cliente)
 
     return localizados
 

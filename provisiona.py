@@ -4,6 +4,7 @@ from playwright.sync_api import sync_playwright
 from time import sleep
 from logging_configure import logger
 
+
 def provisionar_yealink(ip: str, mac: str):
     """Navega na pagina do telefone configura"""
     try:
@@ -72,6 +73,7 @@ def provisionar_grandstream(ip: str, mac: str):
                 http_credentials={"username": "admin", "password": "admin"}
             )
             page.goto("http://"+ip)
+
             #logar
             page.locator('//*[@id="control-pad"]/div[1]/div[2]/input').click()
             page.locator('//*[@id="control-pad"]/div[1]/div[2]/input').fill("admin")
@@ -86,8 +88,19 @@ def provisionar_grandstream(ip: str, mac: str):
             page.locator('//*[@id="gwt-uid-188"]').click()
             page.locator('//*[@id="left-pad"]/div/div[2]/div[2]/div[1]').click()
             page.locator('//*[@id="elm-57"]/button').click()
-            sleep(30)
-            # page.locator('/html/body/div[5]/div/div/div/div[2]/div/div/div').click()
+            # 
+            page.locator('//html/body/div[5]/div/div/div/div[2]/div/div/div/form/table/tbody/tr[2]/td/input').click()
+            with page.expect_file_chooser() as fc_info:
+                page.locator('//html/body/div[5]/div/div/div/div[2]/div/div/div/form/table/tbody/tr[2]/td/input').click()
+            file_chooser = fc_info.value
+            file_chooser.set_files(arquivo_caminho)
+            print(type(fc_info))
+
+            page.locator('//html/body/div[5]/div/div/div/div[2]/div/div/table/tbody/tr/td/table/tbody/tr[2]/td/button').click()
+            # page.locator('//html/body/div[4]/div/div/div/div[1]/span').click()
+            # browser.close()
+
+            sleep(3000)
 
 
 

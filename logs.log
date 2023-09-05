@@ -45,3 +45,27 @@ playwright._impl._api_types.Error: Connection closed
 2023-09-04 16:56:12,336 | ERROR | Future exception was never retrieved
 future: <Future finished exception=Error('Connection closed')>
 playwright._impl._api_types.Error: Connection closed
+2023-09-04 20:41:46,237 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 20:41:46,238 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 20:44:31,772 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 20:44:31,778 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 20:48:53,981 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 20:48:53,982 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 21:03:00,511 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-04 21:03:00,512 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
