@@ -32,16 +32,13 @@ def mac_vendor(mac):
 def scan(localizados):
     """Funcao scanner rede sem paremetros"""
     request = ARP()
-    request.pdst = '10.17.2.1/24'
+    request.pdst = '10.17.11.1/24'
     # request.psrc = '10.17.12.2'
     # print(request.summary())
     broadcast = Ether()
     broadcast.dst = 'ff:ff:ff:ff:ff:ff'
-    vlan = Dot1Q(vlan=11)
-    vlan.vlan = 12
-    request_broadcast = broadcast / request / vlan
+    request_broadcast = broadcast / request
     # print(ls(request_broadcast))
-    print(sendp(request_broadcast))
     clientes = srp(
         request_broadcast,
         timeout=1,

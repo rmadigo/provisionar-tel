@@ -69,3 +69,99 @@ playwright._impl._api_types.Error: Connection closed
 2023-09-04 21:03:00,512 | ERROR | Future exception was never retrieved
 future: <Future finished exception=Error('Connection closed')>
 playwright._impl._api_types.Error: Connection closed
+2023-09-05 14:14:49,827 | INFO | O telefone 24:9a:d8:61:5c:99 foi provisionado
+2023-09-05 14:15:02,624 | INFO | O telefone 24:9a:d8:61:5b:82 foi provisionado
+2023-09-05 14:15:59,675 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-05 14:16:16,518 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-05 14:16:35,139 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-05 14:17:09,810 | ERROR | Task was destroyed but it is pending!
+task: <Task pending name='Task-10' coro=<Locator.click() done, defined at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_locator.py:147> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[SyncBase._sync.<locals>.<lambda>() at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_sync_base.py:105, ProtocolCallback.__init__.<locals>.cb() at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_connection.py:190]>
+2023-09-05 14:17:27,462 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-05 14:18:07,284 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-05 14:18:41,311 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-05 16:59:59,783 | ERROR | Erro durante o provisionamento: net::ERR_CONNECTION_REFUSED at http://10.17.11.26/
+=========================== logs ===========================
+navigating to "http://10.17.11.26/", waiting until "load"
+============================================================
+2023-09-05 17:00:42,906 | ERROR | Erro durante o provisionamento: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id=\"idUsername\"]")
+============================================================
+2023-09-05 17:01:29,392 | ERROR | Erro durante o provisionamento: Page closed
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id=\"idUsername\"]")
+============================================================
+2023-09-06 11:26:57,601 | ERROR | Erro durante o provisionamento: Page closed
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id=\"idUsername\"]")
+============================================================
+2023-09-06 11:28:13,314 | INFO | O telefone 24:9A:D8:61:5B:58 foi provisionado
+2023-09-06 11:29:28,764 | INFO | O rama 4532 foi provisionado
+2023-09-06 11:29:49,071 | INFO | O rama 4532 foi provisionado
+2023-09-06 12:00:38,550 | ERROR | Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2023-09-06 12:02:42,304 | ERROR | Erro durante o provisionamento: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id=\"findKey0\"]")
+  locator resolved to <select size="1" id="findKey0" name="findKey0" onchange=…>…</select>
+  selecting specified option(s)
+    did not find some options - waiting... 
+============================================================
+2023-09-06 12:04:08,547 | ERROR | Erro durante o provisionamento: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id=\"findKey0\"]")
+  locator resolved to <select size="1" id="findKey0" name="findKey0" onchange=…>…</select>
+  selecting specified option(s)
+    did not find some options - waiting... 
+============================================================
+2023-09-06 12:04:50,273 | ERROR | Erro durante o provisionamento: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id=\"findKey0\"]")
+  locator resolved to <select size="1" id="findKey0" name="findKey0" onchange=…>…</select>
+  selecting specified option(s)
+    did not find some options - waiting... 
+============================================================
+2023-09-06 12:11:08,241 | ERROR | Erro durante o provisionamento: Unexpected token "/" while parsing selector "/html/body/table[2]/tbody/tr[2]/td[4]/table/tbody/tr[4]/td/table/tbody/tr/td[1]/table/tbody/tr[6]/td/a"
+2023-09-06 12:13:35,359 | ERROR | Erro durante o provisionamento: DOMException: Failed to execute 'querySelectorAll' on 'Document': '[name=/Group/Members]' is not a valid selector.
+    at query (<anonymous>:3269:41)
+    at <anonymous>:3279:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3056:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3266:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3146:19)
+    at <anonymous>:3094:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3056:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3087:19)
+    at Object.query (<anonymous>:3301:44)
+    at <anonymous>:3259:21
+=========================== logs ===========================
+waiting for locator("[name=/Group/Members]")
+============================================================
+2023-09-06 12:14:21,582 | ERROR | Erro durante o provisionamento: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("[name=\"/Group/Members\"]")
+============================================================
+2023-09-06 12:19:25,697 | ERROR | Erro durante o provisionamento: Unexpected token "" while parsing selector "[name="EnteredUserID]""
+2023-09-06 12:24:49,434 | ERROR | Erro durante o provisionamento: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("[name=\"NewDeviceType\"]")
+============================================================
+2023-09-06 12:27:41,697 | ERROR | Task was destroyed but it is pending!
+task: <Task pending name='Task-19' coro=<Locator.fill() done, defined at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_locator.py:204> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[SyncBase._sync.<locals>.<lambda>() at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_sync_base.py:105, ProtocolCallback.__init__.<locals>.cb() at C:\Users\rodrigo.amorim\Documents\Python\provisionar-tel\venv\Lib\site-packages\playwright\_impl\_connection.py:190]>
+2023-09-06 13:57:32,038 | ERROR | Erro durante o provisionamento: Error: strict mode violation: locator("[name=\"ok\"]") resolved to 2 elements:
+    1) <input name="ok" value="OK" type="submit" class="bwbutt…/> aka locator("#buttonbartop").get_by_role("button", name="OK")
+    2) <input name="ok" value="OK" type="submit" class="bwbutt…/> aka locator("#buttonbarbottom").get_by_role("button", name="OK")
+
+=========================== logs ===========================
+waiting for locator("[name=\"ok\"]")
+============================================================
+2023-09-06 13:59:59,247 | ERROR | Erro durante o provisionamento: Page closed
+=========================== logs ===========================
+waiting for locator("[name=\"OK\"]")
+============================================================
+2023-09-06 14:01:09,096 | ERROR | Erro durante o provisionamento: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("[name=\"OK\"]")
+============================================================
+2023-09-06 16:34:23,285 | INFO | O telefone 24:9A:D8:61:61:09 foi provisionado
+2023-09-06 16:35:02,824 | INFO | O rama 4523 foi provisionado
