@@ -5,9 +5,9 @@ device.py
 from dataclasses import dataclass
 from time import sleep
 import requests
-from tqdm import tqdm
+# from tqdm import tqdm
 from scapy.all import ARP, Ether, srp, Dot1Q, ls, sendp
-from provisiona import provisionar_yealink
+from provisiona import provisionar_yealink, provisionar_grandstream
 
 
 @dataclass
@@ -61,7 +61,7 @@ def scan(localizados):
             if "yealink" in vendor.lower():
                 provisionar_yealink(ip_cliente, mac_cliente)
             elif "grandstream" in vendor.lower():
-                pass
+                provisionar_grandstream(ip_cliente, mac_cliente)
             localizados.append(mac_cliente)
 
     return localizados

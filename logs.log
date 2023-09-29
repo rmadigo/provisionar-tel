@@ -165,3 +165,95 @@ waiting for locator("[name=\"OK\"]")
 ============================================================
 2023-09-06 16:34:23,285 | INFO | O telefone 24:9A:D8:61:61:09 foi provisionado
 2023-09-06 16:35:02,824 | INFO | O rama 4523 foi provisionado
+2023-09-21 14:27:59,302 | INFO | O rama 4515 foi provisionado
+2023-09-21 14:30:27,912 | INFO | O rama 4515 foi provisionado
+2023-09-21 14:32:54,806 | INFO | O rama 4515 foi provisionado
+2023-09-21 14:34:26,468 | INFO | O rama 4517 foi provisionado
+2023-09-21 14:34:33,984 | INFO | O rama 4583 foi provisionado
+2023-09-21 14:34:41,848 | INFO | O rama 4586 foi provisionado
+2023-09-21 14:34:49,773 | INFO | O rama 4588 foi provisionado
+2023-09-21 14:37:33,317 | INFO | O telefone 24:9a:d8:61:61:77 foi provisionado
+2023-09-21 14:37:45,495 | INFO | O telefone 24:9a:d8:61:5c:87 foi provisionado
+2023-09-21 14:37:59,387 | INFO | O telefone 24:9a:d8:61:61:9c foi provisionado
+2023-09-21 14:58:39,675 | INFO | O telefone 24:9a:d8:61:5c:87 foi provisionado
+2023-09-21 15:03:17,150 | INFO | O telefone 24:9a:d8:61:5b:58 foi provisionado
+2023-09-21 15:06:03,066 | INFO | O telefone 24:9a:d8:61:5b:58 foi provisionado
+2023-09-21 15:36:09,115 | INFO | O telefone 24:9a:d8:61:61:77 foi provisionado
+2023-09-21 15:39:55,926 | INFO | O rama 4530 foi provisionado
+2023-09-21 15:40:06,196 | INFO | O rama 4502 foi provisionado
+2023-09-21 15:40:57,915 | ERROR | Erro durante o provisionamento: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id=\"Status\"]/div")
+============================================================
+2023-09-21 15:42:19,031 | ERROR | Erro durante o provisionamento: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id=\"idUsername\"]")
+============================================================
+2023-09-25 14:27:52,834 | INFO | O rama 4585 foi provisionado
+2023-09-25 14:28:00,806 | INFO | O rama 4556 foi provisionado
+2023-09-25 14:28:09,168 | INFO | O rama 4518 foi provisionado
+2023-09-25 14:28:17,370 | INFO | O rama 4577 foi provisionado
+2023-09-25 14:28:25,005 | INFO | O rama 4595 foi provisionado
+2023-09-25 14:29:11,910 | INFO | O telefone 24:9a:d8:61:61:88 foi provisionado
+2023-09-25 14:43:21,067 | INFO | O telefone 24:9a:d8:61:58:15 foi provisionado
+2023-09-27 15:20:34,295 | INFO | O rama 4542 foi provisionado
+2023-09-27 15:20:45,959 | INFO | O rama 4521 foi provisionado
+2023-09-27 15:20:54,369 | INFO | O rama 4554 foi provisionado
+2023-09-27 15:21:02,592 | INFO | O rama 4572 foi provisionado
+2023-09-27 15:21:10,609 | INFO | O rama 4570 foi provisionado
+2023-09-27 15:21:19,095 | INFO | O rama 4516 foi provisionado
+2023-09-27 15:21:27,174 | INFO | O rama 4525 foi provisionado
+2023-09-27 15:21:36,627 | INFO | O rama 4513 foi provisionado
+2023-09-27 15:26:56,173 | INFO | O telefone 24:9a:d8:61:5c:67 foi provisionado
+2023-09-27 15:27:14,478 | INFO | O telefone 24:9a:d8:61:57:f5 foi provisionado
+2023-09-27 15:27:32,597 | INFO | O telefone 24:9a:d8:61:57:12 foi provisionado
+2023-09-27 15:27:50,799 | INFO | O telefone 24:9a:d8:61:5c:5b foi provisionado
+2023-09-27 15:46:01,980 | INFO | O telefone 24:9a:d8:61:5b:1a foi provisionado
+2023-09-27 15:46:23,726 | INFO | O telefone 24:9a:d8:61:57:09 foi provisionado
+2023-09-27 15:46:41,692 | INFO | O telefone 24:9a:d8:61:5b:9d foi provisionado
+2023-09-27 15:46:59,554 | INFO | O telefone 24:9a:d8:61:61:8d foi provisionado
+2023-09-27 16:41:35,642 | INFO | O telefone 24:9a:d8:61:61:20 foi provisionado
+2023-09-27 16:41:53,313 | INFO | O telefone 24:9a:d8:61:57:ca foi provisionado
+2023-09-27 16:42:10,965 | INFO | O telefone 24:9a:d8:61:5a:a5 foi provisionado
+2023-09-27 16:42:28,457 | INFO | O telefone 24:9a:d8:61:5c:62 foi provisionado
+2023-09-27 16:47:06,384 | INFO | O telefone 24:9a:d8:61:57:ca foi provisionado
+2023-09-27 16:47:28,033 | INFO | O telefone 24:9a:d8:61:61:20 foi provisionado
+2023-09-27 16:47:48,925 | INFO | O telefone 24:9a:d8:61:5c:62 foi provisionado
+2023-09-27 16:48:10,037 | INFO | O telefone 24:9a:d8:61:5a:a5 foi provisionado
+2023-09-27 16:55:34,462 | INFO | O ramal 4534 foi provisionado
+2023-09-27 16:55:42,848 | INFO | O ramal 4543 foi provisionado
+2023-09-27 16:55:50,992 | INFO | O ramal 4508 foi provisionado
+2023-09-27 16:55:59,211 | INFO | O ramal 4580 foi provisionado
+2023-09-27 16:56:07,270 | INFO | O ramal 4537 foi provisionado
+2023-09-27 16:56:15,407 | INFO | O ramal 4569 foi provisionado
+2023-09-27 16:56:23,748 | INFO | O ramal 4514 foi provisionado
+2023-09-27 16:56:31,794 | INFO | O ramal 4519 foi provisionado
+2023-09-27 16:56:40,172 | INFO | O ramal 4544 foi provisionado
+2023-09-27 16:56:48,278 | INFO | O ramal 4573 foi provisionado
+2023-09-27 16:56:56,774 | INFO | O ramal 4559 foi provisionado
+2023-09-27 16:57:04,904 | INFO | O ramal 4581 foi provisionado
+2023-09-28 10:56:51,145 | INFO | O telefone 24:9a:d8:61:56:ab foi provisionado
+2023-09-28 10:57:12,647 | INFO | O telefone 24:9a:d8:61:5a:b6 foi provisionado
+2023-09-28 10:57:33,108 | INFO | O telefone 24:9a:d8:61:57:16 foi provisionado
+2023-09-28 10:57:38,748 | ERROR | Erro durante o provisionamento: net::ERR_ABORTED at http://10.17.11.28/
+=========================== logs ===========================
+navigating to "http://10.17.11.28/", waiting until "load"
+============================================================
+2023-09-28 11:09:08,152 | INFO | O telefone 24:9a:d8:61:61:34 foi provisionado
+2023-09-28 11:09:28,686 | INFO | O telefone 24:9a:d8:61:62:8a foi provisionado
+2023-09-28 11:09:49,370 | INFO | O telefone 24:9a:d8:61:57:2d foi provisionado
+2023-09-28 11:10:09,745 | INFO | O telefone 24:9a:d8:61:61:48 foi provisionado
+2023-09-28 11:36:23,493 | INFO | O ramal 4560 foi provisionado
+2023-09-28 11:36:31,796 | INFO | O ramal 4599 foi provisionado
+2023-09-28 11:36:39,651 | INFO | O ramal 4550 foi provisionado
+2023-09-28 11:36:47,506 | INFO | O ramal 4522 foi provisionado
+2023-09-28 11:36:56,057 | INFO | O ramal 4526 foi provisionado
+2023-09-28 11:37:04,225 | INFO | O ramal 4590 foi provisionado
+2023-09-28 11:37:12,375 | INFO | O ramal 4582 foi provisionado
+2023-09-28 11:37:23,849 | INFO | O ramal 4571 foi provisionado
+2023-09-28 11:37:35,434 | INFO | O ramal 4535 foi provisionado
+2023-09-28 11:38:03,104 | INFO | O telefone 24:9a:d8:61:5b:14 foi provisionado
+2023-09-28 11:38:23,967 | INFO | O telefone 24:9a:d8:61:56:75 foi provisionado
+2023-09-28 11:38:44,788 | INFO | O telefone 24:9a:d8:61:57:ee foi provisionado
+2023-09-28 11:39:05,766 | INFO | O telefone 24:9a:d8:61:57:0f foi provisionado
+2023-09-28 11:46:28,128 | INFO | O telefone 24:9a:d8:61:61:71 foi provisionado

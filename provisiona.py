@@ -9,7 +9,7 @@ def provisionar_yealink(ip: str, mac: str):
     """Navega na pagina do telefone configura"""
     try:
         # print("http://"+ip)
-        server_url = "xsp.gc.italk.net.br:443/dms/YealinkT4xTemplate/" + \
+        server_url = "https://xsp.gc.italk.net.br:443/dms/YealinkT4xTemplate/" + \
             mac.replace(":", "")+".cfg"
         user = "voicemanagerDMS"
         pwd = "q3B~2#MrUsZT!V01c3"
@@ -26,14 +26,13 @@ def provisionar_yealink(ip: str, mac: str):
             page.locator('//*[@id="idPassword"]').fill("admin")
             page.locator('//*[@id="idLogin"]').click()
 
-            # Verifica primeiro login
-
-
-
             # Only Accept Trusted Certificates
             page.locator('//*[@id="Security"]/div').click()
+            sleep(1)
             page.locator('//*[@id="SecurityTrustedCert"]').click()
+            sleep(1)
             page.locator('//*[@id="security-trustedcert"]/form/div[1]/div[2]/div[2]/div/div/span').click()
+            sleep(1)
             page.locator('//*[@id="y-submit-confirm"]/button').click()
             sleep(1)
             # Auto Provision
@@ -46,11 +45,16 @@ def provisionar_yealink(ip: str, mac: str):
             sleep(1)
 
             page.locator('//*[@id="setting-autop"]/form/div[1]/div[2]/div[6]/div/div[1]/input').fill(server_url)
+            sleep(2)
             page.locator('//*[@id="setting-autop"]/form/div[1]/div[2]/div[7]/div/div[1]/input').fill(user)
+            sleep(2)
             page.locator('//*[@id="setting-autop"]/form/div[1]/div[2]/div[8]/div/div[1]/input').fill(pwd)
-            sleep(1)
+            sleep(2)
             page.locator('//*[@id="y-submit-confirm"]/button').click()
+            sleep(1)
             page.locator('//*[@id="Status"]/div').click()
+            sleep(1)
+
             page.locator('//*[@id="Status"]/div').click()
             # sleep(10)
             # print(page.title())
@@ -91,15 +95,12 @@ def verifica_versao_grandstream(page):
             # page.locator('//html/body/div[4]/div/div/div/div[3]/button').click()
     
 
-
 def provisionar_grandstream(ip: str, mac: str):
     """Navega na pagina do telefone configura"""
     try:
-        server_url = "xsp.gc.italk.net.br:443/dms/Grandstream_GXP21XX/" + \
-        mac.replace(":", "")+".cfg"
+        server_url = "xsp.gc.italk.net.br:443/dms/Grandstream_GXP21XX/"
         user = "voicemanagerDMS"
         pwd = "q3B~2#MrUsZT!V01c3"
-
         
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=False)
@@ -124,37 +125,52 @@ def provisionar_grandstream(ip: str, mac: str):
             #     page.locator('//html/body/div[4]/div/div/div/div[2]/div/div[3]/div[2]/input').fill("laboral")
             #     page.locator('//html/body/div[4]/div/div/div/div[2]/div/div[4]/div[2]/input').fill("laboral")
 
+            
             page.locator('//*[@id="gwt-uid-188"]').click()
+            sleep(1)
             page.locator('//*[@id="left-pad"]/div/div[2]/div[2]/div[1]').click()
+            sleep(1)
+
             # page.locator('//*[@id="gwt-uid-179"]').click()
+            
+            page.locator('//*[@id="gwt-uid-288"]').click()
+            sleep(1)
 
             page.locator('//*[@id="elm-111"]').fill(server_url)
+            sleep(1)
+
             page.locator('//*[@id="elm-113"]').fill(user)
+            sleep(1)
+
             page.locator('//*[@id="elm-115"]').fill(pwd)
-            
+            sleep(1)
 
             # OK
             page.locator('//*[@id="elm-162"]').click()
+            sleep(1)
+
             # verifica_versao_grandstream(page)
             # Provisionar
             page.locator('//*[@id="elm-5"]').click()
+            sleep(1)
+
             page.locator('//*[@id="elm-4"]').click()
+            sleep(1)
+
             page.locator('//html/body/div[4]/div/div/div/div[3]/button[1]').click()
+            sleep(1)
+
 
             # # page.locator('//html/body/div[4]/div/div/div/div[1]/span').click()
             # # browser.close()
 
-            sleep(3000)
-
-
-
-            
+            sleep(30)
+        
 
     except Exception as e:
         print(e)
 
 
 if __name__ == "__main__":
-    provisionar_yealink("10.17.27.136", "24:9A:D8:61:61:09")
-    # provisionar_grandstream("10.17.11.23", "C0:74:AD:CA:DB:76")
-
+    # provisionar_yealink("10.17.11.34", "c0:74:ad:ca:de:4c")
+    provisionar_grandstream("10.17.11.17", "C0:74:AD:CA:D8:DF")
